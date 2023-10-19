@@ -12,7 +12,7 @@ const char* ssid = "Ram";
 const char* password = "ramsupercool";
 
 //Your Domain name with URL path or IP address with path
-const char* serverName = "http://54.236.232.179:1234/setValue";
+const char* serverName = "http://3.89.162.143:1234/setValue";
 
 // the following variables are unsigned longs because the time, measured in
 // milliseconds, will quickly become a bigger number than can be stored in an int.
@@ -33,6 +33,8 @@ SimpleDHT11 dht11(pinDHT11);
 
 float t0;
 float t1;
+float delay0;
+float delay1;
 
 String httpGETRequest(const char* serverName) {
   HTTPClient http;
@@ -116,9 +118,11 @@ void loop() {
       int h = (int)humidity;
       String url = String(serverName) + "?t=" + t + "&h=" + h;
       Serial.println(url);       
+      delay0 = millis();
       response = httpGETRequest(url.c_str());
+      delay1 = millis();
       Serial.println(response);
-      Serial.println(t1-t0);
+      Serial.println(delay1-delay0);
       t0 = millis();
       }
 
