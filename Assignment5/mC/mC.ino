@@ -35,6 +35,7 @@ float t0;
 float t1;
 float delay0;
 float delay1;
+float total_delay;
 
 String httpGETRequest(const char* serverName) {
   HTTPClient http;
@@ -112,7 +113,7 @@ void loop() {
       ttgo->tft->drawString(String((int)temperature*1.8 + 32) + " *F",  5, 10);
       ttgo->tft->drawString(String(humidity) + " % H",  5, 40);
   
-  if((t1-t0)>5000.0)
+  if((t1-t0)>(5000.0 - total_delay))
       {
       int t = (int)temperature;
       int h = (int)humidity;
@@ -121,8 +122,9 @@ void loop() {
       delay0 = millis();
       response = httpGETRequest(url.c_str());
       delay1 = millis();
+      total_delay = delay1- delay0;
       Serial.println(response);
-      Serial.println(delay1-delay0);
+      Serial.println(total_delay);
       t0 = millis();
       }
 
