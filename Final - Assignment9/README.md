@@ -6,11 +6,11 @@
 </ul>
 <ul>
    <h3>Contents</h3>
-<li>Node server, HTML page, JS - under node_server/ "node_server.js, update_items.js, index.html"</li>
+<li>Node server, HTML page, JS - under node_server/  -->  "node_server.js, update_items.js, index.html"</li>
   <b>Note</b> : The index_combined.html and node_server_combined.js are files used to host the page on AWS. The HTML contains all the javascipt inline to the HTML.
-<li>Python code - under node_server/ "model_deploy.py"  </li>
+<li>Python code - under node_server/   -->  "model_deploy.py"  </li>
 <li>Dataset - under dataset/ </li>
-<li>Mpdel training weights and metrics - under exp2/ "weights/best.pt"</li>  
+<li>Mpdel training weights and metrics - under exp2/   -->  "weights/best.pt"</li>  
 </ul>
 
 
