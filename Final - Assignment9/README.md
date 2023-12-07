@@ -5,4 +5,4 @@ Simply show the food product to the camera, and it will automatically update you
 <br><br>
 <h3>Model training</h3>
 <p>Training images</p>
-<img src="exp2/train_batch0.jpg" width=500 height=500><img src="exp2/train_batch1.jpg" width=500 height=500><br>
+<center><img src="exp2/train_batch0.jpg" width=700 height=700><img src="exp2/train_batch1.jpg" width=700 height=700></center>
