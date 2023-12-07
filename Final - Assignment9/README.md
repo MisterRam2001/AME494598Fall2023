@@ -1,20 +1,23 @@
 <h1>Programming for Internet of Things</h1>
 <ul>
-  Team Members
+  <h3>Team Members</h3>
   <li>Alyana Nelson</li>
   <li>Ramprakash Sridharan</li>
 </ul>
-<p>A kitchen-based system that allows you to effortlessly add items to your grocery list. 
-Simply show the food product to the camera, and it will automatically update your 'grocery cart'.  such as an Apples, water, yogurt,  cereal, oil, etc.
-</p>
-<br><br>
 <ul>
+   <h3>Contents</h3>
 <li>Node server,HTML page,JS - under node_server/ "node_server.js, update_items.js, index.html"</li>
   Note that the index_combined.html and node_server_combined.js are files used to host the page on AWS. The HTML contains all the javascipt inline to the HTML.
 <li>Python code - under node_server/ "model_deploy.py"  </li>
 <li>Dataset - under dataset/ </li>
 <li>Mpdel training weights and metrics - under exp2/ "weights/best.pt"</li>  
 </ul>
+
+<p>A kitchen-based system that allows you to effortlessly add items to your grocery list. 
+Simply show the food product to the camera, and it will automatically update your 'grocery cart'.  such as an Apples, water, yogurt,  cereal, oil, etc.
+</p>
+<br><br>
+
 
 <br><br>
 <h3>Model training</h3>
