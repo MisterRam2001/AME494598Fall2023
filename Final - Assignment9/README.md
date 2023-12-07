@@ -11,4 +11,4 @@ Simply show the food product to the camera, and it will automatically update you
 <h3>Training Results</h3>
 <img src="exp2/results.png"><br>
 <p>Confusion Matrix</p>
-<img src="exp2/confusion_matrix.png"><br>
+<img src="exp2/confusion_matrix.png" width=500 height=500><br>
